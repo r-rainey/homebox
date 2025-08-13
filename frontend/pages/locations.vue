@@ -18,7 +18,7 @@
   });
 
   useHead({
-    title: "${siteTitle} | " + t("menu.locations"),
+    title: siteTitle + " | " + t("menu.locations"),
   });
 
   const api = useUserApi();

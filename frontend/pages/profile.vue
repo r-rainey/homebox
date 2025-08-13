@@ -29,7 +29,7 @@
     middleware: ["auth"],
   });
   useHead({
-    title: "${siteTitle} | " + t("menu.profile"),
+    title: siteTitle + " | " + t("menu.profile"),
   });
 
   const api = useUserApi();

@@ -12,7 +12,7 @@
     middleware: ["auth"],
   });
   useHead({
-    title: "${siteTitle} | " + t("menu.home"),
+    title: siteTitle + " | " + t("menu.home"),
   });
 
   const api = useUserApi();

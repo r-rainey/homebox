@@ -19,7 +19,7 @@
   const siteTitle = import.meta.env.SITE_TITLE || "HomeBox";
 
   useHead({
-    title: "${siteTitle} | " + t("index.title"),
+    title: siteTitle + " | " + t("index.title"),
   });
 
   definePageMeta({

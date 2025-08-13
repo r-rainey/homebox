@@ -8,7 +8,7 @@
     middleware: ["auth"],
   });
   useHead({
-    title: "${siteTitle} | " + t("menu.maintenance"),
+    title: siteTitle + " | " + t("menu.maintenance"),
   });
 </script>
 

@@ -32,7 +32,7 @@
   });
 
   useHead({
-    title: "${siteTitle} | " + t("global.items"),
+    title: siteTitle + " | " + t("global.items"),
   });
 
   const searchLocked = ref(false);
