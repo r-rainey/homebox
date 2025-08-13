@@ -23,12 +23,13 @@
   import { DialogID } from "~/components/ui/dialog-provider/utils";
 
   const { t } = useI18n();
+  const siteTitle = import.meta.env.SITE_TITLE || "HomeBox";
 
   definePageMeta({
     middleware: ["auth"],
   });
   useHead({
-    title: "HomeBox | " + t("menu.profile"),
+    title: "${siteTitle} | " + t("menu.profile"),
   });
 
   const api = useUserApi();

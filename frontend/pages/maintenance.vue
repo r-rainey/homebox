@@ -2,12 +2,13 @@
   import { useI18n } from "vue-i18n";
 
   const { t } = useI18n();
+  const siteTitle = import.meta.env.SITE_TITLE || "HomeBox";
 
   definePageMeta({
     middleware: ["auth"],
   });
   useHead({
-    title: "HomeBox | " + t("menu.maintenance"),
+    title: "${siteTitle} | " + t("menu.maintenance"),
   });
 </script>
 

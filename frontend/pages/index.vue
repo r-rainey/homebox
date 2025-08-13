@@ -16,9 +16,10 @@
   import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from "@/components/ui/tooltip";
 
   const { t } = useI18n();
+  const siteTitle = import.meta.env.SITE_TITLE || "HomeBox";
 
   useHead({
-    title: "HomeBox | " + t("index.title"),
+    title: "${siteTitle} | " + t("index.title"),
   });
 
   definePageMeta({

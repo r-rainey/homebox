@@ -25,13 +25,14 @@
   } from "@/components/ui/pagination";
 
   const { t } = useI18n();
+  const siteTitle = import.meta.env.SITE_TITLE || "HomeBox";
 
   definePageMeta({
     middleware: ["auth"],
   });
 
   useHead({
-    title: "HomeBox | " + t("global.items"),
+    title: "${siteTitle} | " + t("global.items"),
   });
 
   const searchLocked = ref(false);

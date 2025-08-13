@@ -6,12 +6,13 @@
   import { useLocationStore } from "~~/stores/locations";
 
   const { t } = useI18n();
+  const siteTitle = import.meta.env.SITE_TITLE || "HomeBox";
 
   definePageMeta({
     middleware: ["auth"],
   });
   useHead({
-    title: "HomeBox | " + t("menu.home"),
+    title: "${siteTitle} | " + t("menu.home"),
   });
 
   const api = useUserApi();
