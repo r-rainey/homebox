@@ -9,7 +9,7 @@
   import type { TreeItem } from "~/lib/api/types/data-contracts";
 
   const { t } = useI18n();
-  const siteTitle = import.meta.env.SITE_TITLE || "HomeBox";
+  const siteTitle = process.env.VUE_APP_TITLE || "HomeBox";
 
   // TODO: eventually move to https://reka-ui.com/docs/components/tree#draggable-sortable-tree
 

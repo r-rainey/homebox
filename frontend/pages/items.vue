@@ -25,7 +25,7 @@
   } from "@/components/ui/pagination";
 
   const { t } = useI18n();
-  const siteTitle = import.meta.env.SITE_TITLE || "HomeBox";
+  const siteTitle = process.env.VUE_APP_TITLE || "HomeBox";
 
   definePageMeta({
     middleware: ["auth"],

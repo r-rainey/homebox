@@ -2,7 +2,7 @@
   import { useI18n } from "vue-i18n";
 
   const { t } = useI18n();
-  const siteTitle = import.meta.env.SITE_TITLE || "HomeBox";
+  const siteTitle = process.env.VUE_APP_TITLE || "HomeBox";
 
   definePageMeta({
     middleware: ["auth"],
