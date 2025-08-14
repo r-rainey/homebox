@@ -10,7 +10,8 @@
   console.log("process.env.HBOX_APP_TITLE: " + process.env.HBOX_APP_TITLE)
   console.log("process.env.VUE_APP_TITLE: " + process.env.VUE_APP_TITLE)
   console.log("process.env.NUXT_APP_TITLE: " + process.env.NUXT_APP_TITLE)
-  console.log("Everything: " + process.env)
+  console.log("process.env.APP_TITLE: " + process.env.APP_TITLE)
+  console.log("Everything: " + process.env[0])
 
   definePageMeta({
     middleware: ["auth"],
