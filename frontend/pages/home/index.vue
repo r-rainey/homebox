@@ -11,7 +11,8 @@
   console.log("process.env.VUE_APP_TITLE: " + process.env.VUE_APP_TITLE)
   console.log("process.env.NUXT_APP_TITLE: " + process.env.NUXT_APP_TITLE)
   console.log("process.env.APP_TITLE: " + process.env.APP_TITLE)
-  console.log("Everything: " + process.env[0])
+  console.log("process.env.VITE_APP_TITLEAPP_TITLE: " + process.env.VITE_APP_TITLE)
+  // console.log("Everything: " + process.env[0])
 
   definePageMeta({
     middleware: ["auth"],
