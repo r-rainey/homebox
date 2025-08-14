@@ -7,6 +7,7 @@
 
   const { t } = useI18n();
   const siteTitle = process.env.HBOX_APP_TITLE || "HomeBoxXXX";
+  console.log("process.env.HBOX_APP_TITLE: " + process.env.HBOX_APP_TITLE)
 
   definePageMeta({
     middleware: ["auth"],

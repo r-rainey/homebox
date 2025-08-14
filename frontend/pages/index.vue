@@ -151,6 +151,7 @@
 
 
 function useHead(arg0: { title: string; }) {
+  console.log(process)
   throw new Error("Function not implemented.");
 }
 </script>
