@@ -16,7 +16,7 @@
   import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from "@/components/ui/tooltip";
 
   const { t } = useI18n();
-  const siteTitle = process.env.VUE_APP_TITLE || "HomeBox";
+  const siteTitle = process.env.VUE_APP_TITLE || "HomeBoxX";
 
   useHead({
     title: siteTitle + " | " + t("index.title"),
