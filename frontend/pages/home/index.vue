@@ -6,7 +6,7 @@
   import { useLocationStore } from "~~/stores/locations";
 
   const { t } = useI18n();
-  const siteTitle = process.env.VUE_APP_TITLE || "HomeBoxXXX";
+  const siteTitle = process.env.HBOX_APP_TITLE || "HomeBoxXXX";
 
   definePageMeta({
     middleware: ["auth"],

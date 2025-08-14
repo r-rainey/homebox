@@ -16,7 +16,7 @@
   import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from "@/components/ui/tooltip";
 
   const { t } = useI18n();
-  const siteTitle = process.env.VUE_APP_TITLE || "HomeBoxX";
+  const siteTitle = process.env.VUE_APP_TITLE || "HomeBox";
 
   useHead({
     title: siteTitle + " | " + t("index.title"),
@@ -148,6 +148,11 @@
   }
 
   const [registerForm, toggleLogin] = useToggle();
+
+
+function useHead(arg0: { title: string; }) {
+  throw new Error("Function not implemented.");
+}
 </script>
 
 <template>
