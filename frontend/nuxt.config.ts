@@ -1,8 +1,17 @@
-import { defineNuxtConfig } from "nuxt/config";
+import { defineNuxtConfig } from "nuxt";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   ssr: false,
+
+  // Runtime config for environment variables
+  runtimeConfig: {
+    // Private keys are only available on the server
+    // Public keys are available on both client and server
+    public: {
+      appTitle: process.env.NUXT_APP_TITLE || 'HomeBox'
+    }
+  },
 
   build: {
     transpile: ["vue-i18n"],

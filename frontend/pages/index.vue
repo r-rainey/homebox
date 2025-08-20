@@ -14,11 +14,12 @@
   import { Button } from "@/components/ui/button";
   import LanguageSelector from "~/components/App/LanguageSelector.vue";
   import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from "@/components/ui/tooltip";
+  import { usePageTitle } from "~~/composables/usePageTitle";
 
   const { t } = useI18n();
 
   useHead({
-    title: "HomeBox | " + t("index.title"),
+    title: usePageTitle(t("index.title")),
   });
 
   definePageMeta({

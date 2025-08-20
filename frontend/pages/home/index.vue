@@ -4,6 +4,7 @@
   import { itemsTable } from "./table";
   import { useLabelStore } from "~~/stores/labels";
   import { useLocationStore } from "~~/stores/locations";
+  import { usePageTitle } from "~~/composables/usePageTitle";
 
   const { t } = useI18n();
 
@@ -11,7 +12,7 @@
     middleware: ["auth"],
   });
   useHead({
-    title: "HomeBox | " + t("menu.home"),
+    title: usePageTitle(t("menu.home")),
   });
 
   const api = useUserApi();

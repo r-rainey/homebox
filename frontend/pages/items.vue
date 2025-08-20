@@ -23,6 +23,7 @@
     PaginationList,
     PaginationListItem,
   } from "@/components/ui/pagination";
+  import { usePageTitle } from "~~/composables/usePageTitle";
 
   const { t } = useI18n();
 
@@ -31,7 +32,7 @@
   });
 
   useHead({
-    title: "HomeBox | " + t("global.items"),
+    title: usePageTitle(t("global.items")),
   });
 
   const searchLocked = ref(false);
